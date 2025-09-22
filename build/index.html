@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jimin's Page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+    <body>
+        <!-- Sticky Navigation Header -->
+        <header class="main-header">
+            <nav class="navbar" id="navbar">
+                <div class="nav-container">
+                    <div class="nav-brand">
+                        <h1>Jimin's Page</h1>
+                    </div>
+                    <ul class="nav-menu" id="nav-menu">
+                        <li class="nav-item">
+                            <a href="#hero" class="nav-link" data-section="hero">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link" data-section="about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#misc" class="nav-link" data-section="misc">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="hamburger" id="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Hero Welcome Section -->
+            <section id="hero" class="section hero-section">
+                <!-- Video Background -->
+                <video class="hero-video-bg" autoplay muted loop playsinline>
+                    <source src="ab2d48049173b9c3b6ee.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="hero-overlay">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Welcome!</h1>
+                        <h2 class="hero-subtitle">I am Jimin</h2>
+                        <p class="hero-description">Passionate Software Engineer & Computer Science Graduate Student</p>
+                        <div class="hero-cta">
+                            <a href="#about" class="cta-button">
+                                <span>More</span>
+                                <i class="fas fa-arrow-down"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Me Details Section -->
+            <section id="about" class="section about-section">
+                <div class="container">
+                    <h2>About Me</h2>
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p>Hi, I'm Jimin Yang, a passionate software engineer pursuing my Master's in Computer Science at UIUC.</p>
+                            <p>I specialize in full-stack development, machine learning, and distributed systems. Currently seeking Summer 2026 internship opportunities.</p>
+                            <div class="education-section">
+                                <h3>Education</h3>
+                                <div class="education-item">
+                                    <div class="education-header">
+                                        <strong>University of Illinois Urbana-Champaign</strong>
+                                        <span class="location">Champaign, IL</span>
+                                    </div>
+                                    <div class="education-details">
+                                        <span class="degree">Master of Computer Science | GPA: 3.91/4.0</span>
+                                        <span class="date">Expected Dec 2026</span>
+                                    </div>
+                                    <button class="courses-btn" data-school="uiuc">
+                                        <i class="fas fa-book"></i>
+                                        Selected Courses
+                                    </button>
+                                </div>
+                                <div class="education-item">
+                                    <div class="education-header">
+                                        <strong>The Ohio State University</strong>
+                                        <span class="location">Columbus, OH</span>
+                                    </div>
+                                    <div class="education-details">
+                                        <span class="degree">Bachelor of Computer Science | GPA: 3.85/4.0</span>
+                                        <span class="date">Aug 2024</span>
+                                    </div>
+                                    <button class="courses-btn" data-school="osu">
+                                        <i class="fas fa-book"></i>
+                                        Selected Courses
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-image">
+                            <img src="f7c3d1bc154868c1bcc8.jpg" alt="Jimin Yang's Photo">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="section experience-section">
+                <div class="experience-overlay">
+                    <div class="container">
+                        <h2>Experience</h2>
+                        <div class="timeline">
+                            <div class="timeline-line"></div>
+                            
+                            <!-- DBS Bank Experience -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="experience-card">
+                                    <div class="experience-header">
+                                        <img src="0cefb87777b9606dfa73.png" alt="DBS Bank Logo" class="company-logo">
+                                        <div class="experience-info">
+                                            <h3>DBS Bank</h3>
+                                            <h4>Software Engineer Intern</h4>
+                                            <span class="duration">July - Aug 2025 • Guangzhou, China</span>
+                                        </div>
+                                    </div>
+                                    <p class="experience-description">
+                                        Contributed to DBS corporate banking platform serving 10k+ enterprise clients. 
+                                        Built distributed lock systems and RESTful APIs with comprehensive testing coverage.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- OSU Experience -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="experience-card">
+                                    <div class="experience-header">
+                                        <img src="6de83bc9cafb44041c63.png" alt="OSU Logo" class="company-logo">
+                                        <div class="experience-info">
+                                            <h3>The Ohio State University</h3>
+                                            <h4>Research Assistant</h4>
+                                            <span class="duration">June - Sept 2024 • Columbus, OH</span>
+                                        </div>
+                                    </div>
+                                    <p class="experience-description">
+                                        Led engineering team building LLM habit coach, increasing user participation by 67%. 
+                                        Architected RAG system reducing hallucinations by 80%.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- EduTechnology Experience -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="experience-card">
+                                    <div class="experience-header">
+                                        <img src="data:image/png;base64,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" alt="EduTechnology Logo" class="company-logo">
+                                        <div class="experience-info">
+                                            <h3>EduTechnology, LLC</h3>
+                                            <h4>Software Engineer Intern</h4>
+                                            <span class="duration">May - Aug 2024 • Columbus, OH</span>
+                                        </div>
+                                    </div>
+                                    <p class="experience-description">
+                                        Built full-stack community platform serving 200+ local artists. 
+                                        Achieved 65% improvement in engagement through platform optimization.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="section projects-section">
+                <div class="container">
+                    <h2>Projects</h2>
+                    <div class="carousel-container">
+                        <div class="carousel-wrapper">
+                            <div class="carousel-track" id="carousel-track">
+                                <!-- Project 1 -->
+                                <div class="carousel-slide active">
+                                    <div class="project-card">
+                                        <div class="project-content">
+                                            <div class="project-header">
+                                                <img src="42c813520156b50c007b.png" alt="AnkiCode Logo" class="project-logo">
+                                                <h3>AnkiCode - Smart Code Memory Training</h3>
+                                            </div>
+                                            <p>A Chrome extension using FSRS algorithm for intelligent code review sessions. Helps programmers retain LeetCode solutions through spaced repetition.</p>
+                                            <div class="project-tags">
+                                                <span class="tag">React</span>
+                                                <span class="tag">TypeScript</span>
+                                                <span class="tag">Chrome Extension</span>
+                                                <span class="tag">Manifest V3</span>
+                                                <span class="tag">FSRS Algorithm</span>
+                                                <span class="tag">Tailwind CSS</span>
+                                                <span class="tag">Vite</span>
+                                                <span class="tag">Local Storage</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Project 2 -->
+                                <div class="carousel-slide">
+                                    <div class="project-card">
+                                        <div class="project-content">
+                                            <div class="project-header">
+                                                <img src="25bcd7aabeef9388478a.png" alt="TasteSpot Logo" class="project-logo">
+                                                <h3>TasteSpot</h3>
+                                            </div>
+                                            <p>High-concurrency discount shopping platform with distributed authentication architecture. Designed for flash sales with data integrity and optimistic locking.</p>
+                                            <div class="project-tags">
+                                                <span class="tag">GitHub Actions</span>
+                                                <span class="tag">Docker</span>
+                                                <span class="tag">Redis</span>
+                                                <span class="tag">AWS SNS</span>
+                                                <span class="tag">Redisson</span>
+                                                <span class="tag">CAS Locking</span>
+                                                <span class="tag">RabbitMQ</span>
+                                                <span class="tag">Spring Boot</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Project 3 -->
+                                <div class="carousel-slide">
+                                    <div class="project-card">
+                                        <div class="project-content">
+                                            <div class="project-header">
+                                                <img src="eea6f550a9285786e150.png" alt="E-Commerce Platform Logo" class="project-logo">
+                                                <h3>Distributed E-Commerce Platform</h3>
+                                            </div>
+                                            <p>Microservices architecture handling 200K+ daily transactions with 99.9% uptime. Features MySQL sharding strategy and Kafka message queue for 5000 TPS.</p>
+                                            <div class="project-tags">
+                                                <span class="tag">Spring Cloud</span>
+                                                <span class="tag">MySQL</span>
+                                                <span class="tag">Redis Cluster</span>
+                                                <span class="tag">Kafka</span>
+                                                <span class="tag">Kubernetes</span>
+                                                <span class="tag">Docker</span>
+                                                <span class="tag">Microservices</span>
+                                                <span class="tag">Load Balancing</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Navigation Arrows -->
+                        <button class="carousel-nav carousel-prev" id="carousel-prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-nav carousel-next" id="carousel-next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+
+                        <!-- Carousel Indicators -->
+                        <div class="carousel-indicators">
+                            <button class="indicator active" data-slide="0"></button>
+                            <button class="indicator" data-slide="1"></button>
+                            <button class="indicator" data-slide="2"></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="misc" class="section skills-section">
+                <div class="container">
+                    <h2>Technical Skills</h2>
+                    <div class="skills-grid">
+                        <!-- Programming Languages -->
+                        <div class="skill-category">
+                            <div class="category-header">
+                                <i class="fas fa-code"></i>
+                                <h3>Programming Languages</h3>
+                            </div>
+                            <div class="skill-tags">
+                                <span class="skill-tag">
+                                    <i class="fab fa-java"></i>
+                                    Java
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fab fa-python"></i>
+                                    Python
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fab fa-golang"></i>
+                                    Go
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fab fa-js-square"></i>
+                                    JavaScript/TypeScript
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fab fa-php"></i>
+                                    PHP
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fas fa-plus"></i>
+                                    C++
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fas fa-database"></i>
+                                    SQL
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Frameworks & Tools -->
+                        <div class="skill-category">
+                            <div class="category-header">
+                                <i class="fas fa-tools"></i>
+                                <h3>Frameworks & Tools</h3>
+                            </div>
+                            <div class="skill-tags">
+                                <span class="skill-tag">
+                                    <i class="fab fa-react"></i>
+                                    React
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fab fa-node-js"></i>
+                                    Node.js/Express
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fas fa-leaf"></i>
+                                    Spring Boot
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fas fa-gin"></i>
+                                    Gin
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fas fa-stream"></i>
+                                    Kafka
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fas fa-key"></i>
+                                    JWT
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fas fa-plug"></i>
+                                    WebSocket
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Cloud & Database -->
+                        <div class="skill-category">
+                            <div class="category-header">
+                                <i class="fas fa-cloud"></i>
+                                <h3>Cloud & Database</h3>
+                            </div>
+                            <div class="skill-tags">
+                                <span class="skill-tag">
+                                    <i class="fab fa-aws"></i>
+                                    AWS
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fab fa-google"></i>
+                                    GCP
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fab fa-docker"></i>
+                                    Docker
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fas fa-dharmachakra"></i>
+                                    Kubernetes
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fas fa-database"></i>
+                                    MySQL
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fas fa-leaf"></i>
+                                    MongoDB
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fas fa-memory"></i>
+                                    Redis
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fas fa-elephant"></i>
+                                    PostgreSQL
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section contact-section">
+                <div class="container">
+                    <h2>Contact Me</h2>
+                    <div class="contact-content">
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>jimin.yang.0607@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fab fa-linkedin"></i>
+                                <span>linkedin.com/in/jiminyang07</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fab fa-github"></i>
+                                <span>github.com/Jiminyang1</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Social Media Icons -->
+                        <div class="social-links">
+                            <a href="https://linkedin.com/in/jiminyang07" class="social-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/Jiminyang1" class="social-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="mailto:jimin.yang.0607@gmail.com" class="social-link">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Courses Modal -->
+        <div id="courses-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="modal-title">Selected Courses</h3>
+                    <button class="modal-close" aria-label="Close modal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="courses-content">
+                        <!-- Course content will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <p>&copy; 2025 Jimin's Page. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#privacy">Privacy Policy</a>
+                        <a href="#terms">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <script defer src="bundle.js"></script></body>
+</html>
