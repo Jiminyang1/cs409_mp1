@@ -4,10 +4,435 @@
         <meta charset="utf-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
+        <title>Jimin's Page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     </head>
     <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
+        <!-- Sticky Navigation Header -->
+        <header class="main-header">
+            <nav class="navbar" id="navbar">
+                <div class="nav-container">
+                    <div class="nav-brand">
+                        <h1>Jimin's Page</h1>
+                    </div>
+                    <ul class="nav-menu" id="nav-menu">
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link" data-section="about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#misc" class="nav-link" data-section="misc">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="hamburger" id="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- About Section -->
+            <section id="about" class="section about-section">
+                <div class="container">
+                    <h2>About Me</h2>
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p>Hi, I'm Jimin Yang, a passionate software engineer pursuing my Master's in Computer Science at UIUC with a 3.91 GPA.</p>
+                            <p>I specialize in full-stack development, machine learning, and distributed systems. Currently seeking Summer 2026 internship opportunities.</p>
+                            <div class="education-section">
+                                <h3>Education</h3>
+                                <div class="education-item">
+                                    <div class="education-header">
+                                        <strong>University of Illinois Urbana-Champaign</strong>
+                                        <span class="location">Champaign, IL</span>
+                                    </div>
+                                    <div class="education-details">
+                                        <span class="degree">Master of Computer Science | GPA: 3.91/4.0</span>
+                                        <span class="date">Expected Dec 2026</span>
+                                    </div>
+                                    <button class="courses-btn" data-school="uiuc">
+                                        <i class="fas fa-book"></i>
+                                        Selected Courses
+                                    </button>
+                                </div>
+                                <div class="education-item">
+                                    <div class="education-header">
+                                        <strong>The Ohio State University</strong>
+                                        <span class="location">Columbus, OH</span>
+                                    </div>
+                                    <div class="education-details">
+                                        <span class="degree">Bachelor of Computer Science | GPA: 3.85/4.0</span>
+                                        <span class="date">Aug 2024</span>
+                                    </div>
+                                    <button class="courses-btn" data-school="osu">
+                                        <i class="fas fa-book"></i>
+                                        Selected Courses
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-image">
+                            <img src="assets/image.jpg" alt="Jimin Yang's Photo">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="section experience-section">
+                <div class="experience-overlay">
+                    <div class="container">
+                        <h2>Experience</h2>
+                        <div class="timeline">
+                            <div class="timeline-line"></div>
+                            
+                            <!-- DBS Bank Experience -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="experience-card">
+                                    <div class="experience-header">
+                                        <img src="assets/experience/dbs_logo.png" alt="DBS Bank Logo" class="company-logo">
+                                        <div class="experience-info">
+                                            <h3>DBS Bank</h3>
+                                            <h4>Software Engineer Intern</h4>
+                                            <span class="duration">July - Aug 2025 • Guangzhou, China</span>
+                                        </div>
+                                    </div>
+                                    <p class="experience-description">
+                                        Contributed to DBS corporate banking platform serving 10k+ enterprise clients. 
+                                        Built distributed lock systems and RESTful APIs with comprehensive testing coverage.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- OSU Experience -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="experience-card">
+                                    <div class="experience-header">
+                                        <img src="assets/experience/osu_logo.png" alt="OSU Logo" class="company-logo">
+                                        <div class="experience-info">
+                                            <h3>The Ohio State University</h3>
+                                            <h4>Research Assistant</h4>
+                                            <span class="duration">June - Sept 2024 • Columbus, OH</span>
+                                        </div>
+                                    </div>
+                                    <p class="experience-description">
+                                        Led engineering team building LLM habit coach, increasing user participation by 67%. 
+                                        Architected RAG system reducing hallucinations by 80%.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- EduTechnology Experience -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="experience-card">
+                                    <div class="experience-header">
+                                        <img src="assets/experience/etl_logo.png" alt="EduTechnology Logo" class="company-logo">
+                                        <div class="experience-info">
+                                            <h3>EduTechnology, LLC</h3>
+                                            <h4>Software Engineer Intern</h4>
+                                            <span class="duration">May - Aug 2024 • Columbus, OH</span>
+                                        </div>
+                                    </div>
+                                    <p class="experience-description">
+                                        Built full-stack community platform serving 200+ local artists. 
+                                        Achieved 65% improvement in engagement through platform optimization.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="section projects-section">
+                <div class="container">
+                    <h2>Projects</h2>
+                    <div class="carousel-container">
+                        <div class="carousel-wrapper">
+                            <div class="carousel-track" id="carousel-track">
+                                <!-- Project 1 -->
+                                <div class="carousel-slide active">
+                                    <div class="project-card">
+                                        <div class="project-content">
+                                            <div class="project-header">
+                                                <img src="assets/projects/project1.png" alt="AnkiCode Logo" class="project-logo">
+                                                <h3>AnkiCode - Smart Code Memory Training</h3>
+                                            </div>
+                                            <p>A Chrome extension using FSRS algorithm for intelligent code review sessions. Helps programmers retain LeetCode solutions through spaced repetition.</p>
+                                            <div class="project-tags">
+                                                <span class="tag">React</span>
+                                                <span class="tag">TypeScript</span>
+                                                <span class="tag">Chrome Extension</span>
+                                                <span class="tag">Manifest V3</span>
+                                                <span class="tag">FSRS Algorithm</span>
+                                                <span class="tag">Tailwind CSS</span>
+                                                <span class="tag">Vite</span>
+                                                <span class="tag">Local Storage</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Project 2 -->
+                                <div class="carousel-slide">
+                                    <div class="project-card">
+                                        <div class="project-content">
+                                            <div class="project-header">
+                                                <img src="assets/projects/project2.png" alt="TasteSpot Logo" class="project-logo">
+                                                <h3>TasteSpot</h3>
+                                            </div>
+                                            <p>High-concurrency discount shopping platform with distributed authentication architecture. Designed for flash sales with data integrity and optimistic locking.</p>
+                                            <div class="project-tags">
+                                                <span class="tag">GitHub Actions</span>
+                                                <span class="tag">Docker</span>
+                                                <span class="tag">Redis</span>
+                                                <span class="tag">AWS SNS</span>
+                                                <span class="tag">Redisson</span>
+                                                <span class="tag">CAS Locking</span>
+                                                <span class="tag">RabbitMQ</span>
+                                                <span class="tag">Spring Boot</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Project 3 -->
+                                <div class="carousel-slide">
+                                    <div class="project-card">
+                                        <div class="project-content">
+                                            <div class="project-header">
+                                                <img src="assets/projects/project3.png" alt="E-Commerce Platform Logo" class="project-logo">
+                                                <h3>Distributed E-Commerce Platform</h3>
+                                            </div>
+                                            <p>Microservices architecture handling 200K+ daily transactions with 99.9% uptime. Features MySQL sharding strategy and Kafka message queue for 5000 TPS.</p>
+                                            <div class="project-tags">
+                                                <span class="tag">Spring Cloud</span>
+                                                <span class="tag">MySQL</span>
+                                                <span class="tag">Redis Cluster</span>
+                                                <span class="tag">Kafka</span>
+                                                <span class="tag">Kubernetes</span>
+                                                <span class="tag">Docker</span>
+                                                <span class="tag">Microservices</span>
+                                                <span class="tag">Load Balancing</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Navigation Arrows -->
+                        <button class="carousel-nav carousel-prev" id="carousel-prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-nav carousel-next" id="carousel-next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+
+                        <!-- Carousel Indicators -->
+                        <div class="carousel-indicators">
+                            <button class="indicator active" data-slide="0"></button>
+                            <button class="indicator" data-slide="1"></button>
+                            <button class="indicator" data-slide="2"></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="misc" class="section skills-section">
+                <div class="container">
+                    <h2>Technical Skills</h2>
+                    <div class="skills-grid">
+                        <!-- Programming Languages -->
+                        <div class="skill-category">
+                            <div class="category-header">
+                                <i class="fas fa-code"></i>
+                                <h3>Programming Languages</h3>
+                            </div>
+                            <div class="skill-tags">
+                                <span class="skill-tag">
+                                    <i class="fab fa-java"></i>
+                                    Java
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fab fa-python"></i>
+                                    Python
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fab fa-golang"></i>
+                                    Go
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fab fa-js-square"></i>
+                                    JavaScript/TypeScript
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fab fa-php"></i>
+                                    PHP
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fas fa-plus"></i>
+                                    C++
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fas fa-database"></i>
+                                    SQL
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Frameworks & Tools -->
+                        <div class="skill-category">
+                            <div class="category-header">
+                                <i class="fas fa-tools"></i>
+                                <h3>Frameworks & Tools</h3>
+                            </div>
+                            <div class="skill-tags">
+                                <span class="skill-tag">
+                                    <i class="fab fa-react"></i>
+                                    React
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fab fa-node-js"></i>
+                                    Node.js/Express
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fas fa-leaf"></i>
+                                    Spring Boot
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fas fa-gin"></i>
+                                    Gin
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fas fa-stream"></i>
+                                    Kafka
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fas fa-key"></i>
+                                    JWT
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fas fa-plug"></i>
+                                    WebSocket
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Cloud & Database -->
+                        <div class="skill-category">
+                            <div class="category-header">
+                                <i class="fas fa-cloud"></i>
+                                <h3>Cloud & Database</h3>
+                            </div>
+                            <div class="skill-tags">
+                                <span class="skill-tag">
+                                    <i class="fab fa-aws"></i>
+                                    AWS
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fab fa-google"></i>
+                                    GCP
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fab fa-docker"></i>
+                                    Docker
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fas fa-dharmachakra"></i>
+                                    Kubernetes
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fas fa-database"></i>
+                                    MySQL
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fas fa-leaf"></i>
+                                    MongoDB
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fas fa-memory"></i>
+                                    Redis
+                                </span>
+                                <span class="skill-tag">
+                                    <i class="fas fa-elephant"></i>
+                                    PostgreSQL
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section contact-section">
+                <div class="container">
+                    <h2>Contact Me</h2>
+                    <div class="contact-content">
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>jimin.yang.0607@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fab fa-linkedin"></i>
+                                <span>linkedin.com/in/jiminyang07</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fab fa-github"></i>
+                                <span>github.com/Jiminyang1</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Courses Modal -->
+        <div id="courses-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="modal-title">Selected Courses</h3>
+                    <button class="modal-close" aria-label="Close modal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="courses-content">
+                        <!-- Course content will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <p>&copy; 2025 Jimin's Page. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#privacy">Privacy Policy</a>
+                        <a href="#terms">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
