@@ -17,6 +17,9 @@
                     </div>
                     <ul class="nav-menu" id="nav-menu">
                         <li class="nav-item">
+                            <a href="#hero" class="nav-link" data-section="hero">Home</a>
+                        </li>
+                        <li class="nav-item">
                             <a href="#about" class="nav-link" data-section="about">About</a>
                         </li>
                         <li class="nav-item">
@@ -43,13 +46,40 @@
 
         <!-- Main Content -->
         <main class="main-content">
-            <!-- About Section -->
+            <!-- Hero Welcome Section -->
+            <section id="hero" class="section hero-section">
+                <!-- Video Background -->
+                <video class="hero-video-bg" autoplay muted loop playsinline>
+                    <source src="assets/aboutme_bg.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="hero-overlay">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Welcome!</h1>
+                        <h2 class="hero-subtitle">I am Jimin Yang</h2>
+                        <p class="hero-description">Passionate Software Engineer & Computer Science Graduate Student</p>
+                        <div class="hero-cta">
+                            <a href="#about" class="cta-button">
+                                <span>Learn More About Me</span>
+                                <i class="fas fa-arrow-down"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="scroll-indicator">
+                        <div class="scroll-arrow">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Me Details Section -->
             <section id="about" class="section about-section">
                 <div class="container">
                     <h2>About Me</h2>
                     <div class="about-content">
                         <div class="about-text">
-                            <p>Hi, I'm Jimin Yang, a passionate software engineer pursuing my Master's in Computer Science at UIUC with a 3.91 GPA.</p>
+                            <p>Hi, I'm Jimin Yang, a passionate software engineer pursuing my Master's in Computer Science at UIUC.</p>
                             <p>I specialize in full-stack development, machine learning, and distributed systems. Currently seeking Summer 2026 internship opportunities.</p>
                             <div class="education-section">
                                 <h3>Education</h3>
@@ -399,6 +429,19 @@
                                 <i class="fab fa-github"></i>
                                 <span>github.com/Jiminyang1</span>
                             </div>
+                        </div>
+                        
+                        <!-- Social Media Icons -->
+                        <div class="social-links">
+                            <a href="https://linkedin.com/in/jiminyang07" class="social-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/Jiminyang1" class="social-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="mailto:jimin.yang.0607@gmail.com" class="social-link">
+                                <i class="fas fa-envelope"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
